@@ -46,12 +46,20 @@ public class Position {
             return true;
         }
 
-        if (other == null || other.getClass() != this.getClass())
+        if (other == null)
+            return false;
+        if (other.getClass() != this.getClass())
             return false;
 
         Position otherPos = ((Position) other);
 
-        return x != otherPos.getX() || y != otherPos.getY();
+        if (x != otherPos.getX())
+            return false;
+        if (y != otherPos.getY()) {
+            return false;
+        }
+
+        return true;
 
     }
 }
