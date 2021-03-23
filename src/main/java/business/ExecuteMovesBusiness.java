@@ -38,7 +38,7 @@ public class ExecuteMovesBusiness {
                 }
             }
 
-            String messageAventurier = aventurier.getNomAventurier() + " " + "a collecté" + " " + aventurier.getNbTresorCollecte();
+            String messageAventurier = aventurier.getNomAventurier() + " " + "a collecté" + " " + aventurier.getNbTresorCollecte() + " " + "trésors";
             LOGGER.log(Level.INFO, messageAventurier);
 
         }
